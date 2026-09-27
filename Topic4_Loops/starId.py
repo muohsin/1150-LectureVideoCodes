@@ -1,0 +1,7 @@
+star_id = input('Enter your star id: ')
+
+while len(star_id) != 8:
+    print('Error - a valid starid has 8 characters')
+    star_id = input('Enter your star id: ')
+
+print('Thank you, your starID is ' + star_id)
