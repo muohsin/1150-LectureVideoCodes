@@ -6,7 +6,7 @@ def main():
     characters = generate_password_characters()  # make string of all the choices that could include letters, numbers, symbols
     password_length = get_length_from_user()  # user input to get (and validate) length
     password = generate_password(password_length, characters)  # generate the random password
-    display_password()  # show user the generated password
+    display_password(password)  # show user the generated password
 
 
 def generate_password_characters():
@@ -49,9 +49,14 @@ def generate_password(password_length, letters):
         print(random_letter)
         password = password + random_letter
 
-    # TASK Show the user the generated password, the result from the program
-    # print('Your password is: ' + password)
 
+    return password # outputs the password - to be stored in the main function
+
+# TASK Show the user the generated password, the result from the program
+# print('Your password is: ' + password)
+
+def display_password(password): # this function needs input - tell it the password is display
+    print('Your password is: ' + password)
 
 # Call main
 main()
