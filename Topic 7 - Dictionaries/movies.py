@@ -102,14 +102,26 @@ for movie_name, rating in movies_ratings.items():
     print(f'{movie_name} has a rating of {rating} out of 10')
 
 
+
+# Display the dictionary before removing Batman
 print(movies_ratings)
+
+# Remove Batman from the dictionary and save its rating
 batman_rating = movies_ratings.pop('Batman')
+
+# Display the dictionary after Batman has been removed
 print(movies_ratings)
+
+# Print Batman's saved rating
 print(batman_rating)
 
+# Check whether The Avengers exist in the dictionary
 if 'The Avengers' in movies_ratings:
+
+    # Remove The Avengers only if it exists
     movies_ratings.pop('The Avengers')
 
+# Display the final dictionary
 print(movies_ratings)
 
 
