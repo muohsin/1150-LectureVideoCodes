@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Converter</title>
+</head>
+<body>
+
+<h1>Grilled Cheese Sandwich Recipe Converter</h1>
+
+<form action="/calculate">
+    <label>Number of servings<input type="number" name="servings"></label>
+    <button type="submit">Calculate</button>
+</form>
+
+<img alt="Grilled Cheese Sandwich cut in half on a plate" height="400" src="{{ url_for('static', filename='sandwitch.jpg') }}">
+
+</body>
+</html>
